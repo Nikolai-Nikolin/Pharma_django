@@ -1,0 +1,164 @@
+{
+	"info": {
+		"_postman_id": "f759a9ea-a86d-484a-af18-865f86cbb447",
+		"name": "Django_pharma",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32463481"
+	},
+	"item": [
+		{
+			"name": "Cures",
+			"item": [
+				{
+					"name": "get_all_cures",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/pharma/api/cures",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"pharma",
+								"api",
+								"cures"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_cure_by_id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/pharma/api/cures/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"pharma",
+								"api",
+								"cures",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create_cure",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Citramon\",\r\n    \"price\": 50,\r\n    \"description\": \"For headache\",\r\n    \"amount\": 10,\r\n    \"available\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/pharma/api/cures/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"pharma",
+								"api",
+								"cures",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update_cure",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\": \"For a cold\",\r\n    \"title\": \"Doctor MOM\",\r\n    \"price\": 99,\r\n    \"amount\": 2\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/pharma/api/cures/2/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"pharma",
+								"api",
+								"cures",
+								"2",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete_cure",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/pharma/api/cures/5/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"pharma",
+								"api",
+								"cures",
+								"5",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "up_server",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/pharma/ping",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"pharma",
+						"ping"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
