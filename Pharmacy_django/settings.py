@@ -79,7 +79,15 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    },
+    'production': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'pharma_db',
+        'USER': 'postgres',
+        'PASSWORD': 'Nik10185',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    },
 }
 
 
