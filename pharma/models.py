@@ -63,3 +63,4 @@ class OrderItem(models.Model):
 class CustomerCure(models.Model):
     customer = models.ForeignKey(Customer, on_delete=CASCADE)
     cure = models.ForeignKey(Cure, on_delete=CASCADE)
+
